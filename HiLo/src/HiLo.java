@@ -17,18 +17,23 @@ public class HiLo {
 			// System.out.println(theNumber);
 
 			int guess = 0;
+			int numberOfTries = 0;
 
 			// nested while loop with game logic
 			while (guess != theNumber) {
 				System.out.println("Guess a number between 1 and 1,000");
 				guess = myScan.nextInt();
 				System.out.println("You entered " + guess + ".");
-				if (guess < theNumber)
+				if (guess < theNumber) {
 					System.out.println(guess + " is too low. Try again.");
-				else if (guess > theNumber)
+					numberOfTries = numberOfTries + 1;
+				} else if (guess > theNumber) {
 					System.out.println(guess + " is too high. Try again.");
-				else
+					numberOfTries = numberOfTries + 1;
+				} else {
 					System.out.println(guess + " is correct. You win!");
+					System.out.println("It only took you " + numberOfTries + " tries!");
+				}
 			}
 
 			// do-while loop to let user loop game
