@@ -27,7 +27,8 @@ public class HiLo {
 			playAgain = myScan.next();
 
 		} while (playAgain.equalsIgnoreCase("y"));
-		// Finished on page 32
+		System.out.println("Thank you for playing!");
+		// Finished on page 36
 	}
 
 }
