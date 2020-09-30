@@ -28,7 +28,8 @@ public class HiLo {
 
 		} while (playAgain.equalsIgnoreCase("y"));
 		System.out.println("Thank you for playing!");
-		// Finished on page 36
+		myScan.close();
+		// Finished on page 37
 	}
 
 }
