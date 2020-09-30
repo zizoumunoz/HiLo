@@ -20,7 +20,7 @@ public class HiLo {
 			else
 				System.out.println(guess + " is correct. You win!");
 		}
-
+		// Finished on page 32
 	}
 
 }
