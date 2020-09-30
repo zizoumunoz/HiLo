@@ -12,7 +12,7 @@ public class HiLo {
 		// starts do-while loop
 		do {
 			// generates random integer "theNumber" between 1 and 100
-			int theNumber = (int) (Math.random() * 100 + 1);
+			int theNumber = (int) (Math.random() * 1_000 + 1);
 
 			// System.out.println(theNumber);
 
@@ -20,7 +20,7 @@ public class HiLo {
 
 			// nested while loop with game logic
 			while (guess != theNumber) {
-				System.out.println("Guess a number between 1 and 100");
+				System.out.println("Guess a number between 1 and 1,000");
 				guess = myScan.nextInt();
 				System.out.println("You entered " + guess + ".");
 				if (guess < theNumber)
